@@ -23,5 +23,5 @@ RaisBot est aussi un bot qui évolue souvent ! Découvrez toutes les nouveautés
 ## Liens
 
 [Inviter le bot](https://discord.com/oauth2/authorize?client_id=781911855299035217&scope=bot&permissions=2147483647)
-[Serveur support](https://discord.gg/SSWQamBCFE)
-[Crédits](https://github.com/Androz2091/)
+\n[Serveur support](https://discord.gg/SSWQamBCFE)
+\n[Crédits](https://github.com/Androz2091/)
