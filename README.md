@@ -12,7 +12,7 @@ RaisBot est aussi un bot qui évolue souvent ! Découvrez toutes les nouveautés
 
 ## Commandes
 ```js
-🗃️ Administration - 4: `deletechannel`, `deleterole`, `setafkchannel`, `slowmode`
+🗃️ Administration - 4: deletechannel, deleterole, setafkchannel, slowmode
 🛠️ Config - 7: `config`, `enable`, `goodbye`, `logschannel`, `variables` et plus...
 🌐 General - 13: `avatar`, `botinfo`, `embed`, `emoji-info`, `github` et plus...
 🎉 Giveaways - 3: `start`, `end`, `reroll`
