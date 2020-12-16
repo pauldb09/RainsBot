@@ -1,4 +1,4 @@
-<img width="150" height="150" align="left" alt="RainsBot" src="https://i.imgur.com/ZE3QXBIh.jpg">  
+<img width="150" height="150" align="left" alt="RainsBot" src="https://imgur.com/a/e1roHAC">  
 
 # RainsBot
 **RainsBot** est un bot __puissant__, __complet__ et **customisable**. Ses plugins de logs, de protection et de message de bienvenue et d'aurevoir vous assure un contrôle de votre communauté ! \nDécouvrez aussi son module de Giveaways, et toutes les commandes utiles à la modération.
@@ -21,3 +21,7 @@ RaisBot est aussi un bot qui évolue souvent ! Découvrez toutes les nouveautés
 ```
 
 ## Liens
+
+[Inviter le bot](https://discord.com/oauth2/authorize?client_id=781911855299035217&scope=bot&permissions=2147483647)
+[Serveur support](https://discord.gg/SSWQamBCFE)
+[Crédits](https://github.com/Androz2091/)
