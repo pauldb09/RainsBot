@@ -8,7 +8,7 @@ RaisBot est aussi un bot qui évolue souvent ! Découvrez toutes les nouveautés
 ## Fonctionnalités
 * 🛡️ `Protection`: Raidmode, Antiban, Anti-lien, Anti-give-role
 * 👋 `Bienvenue et Aurevoir`: Message et salon configurable
-* ⚒️ `Logs`: Salon modifiable
+* ⚒️ `Logs`: Salon modifiable (j'ai add ça coco mdr)
 * 🎉 `Giveaways`: Start, End, Reroll
 
 ## Commandes
