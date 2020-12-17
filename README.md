@@ -1,8 +1,7 @@
-<img src="https://i.imgur.com/ZE3QXBIh.jpg" width="150" alt="RainsBot" />
-
 <a href="https://discord.gg/SSWQamBCFE"><img src="https://img.shields.io/discord/787006944974995476" alt="Discord server" /></a>
 <a href="https://github.com/COCO150/RainsBot"><img src="https://img.shields.io/github/stars/COCO150/RainsBot?style=social" alt="Patreon" /></a>
 
+<img src="https://i.imgur.com/ZE3QXBIh.jpg" width="150" alt="RainsBot" />
 
 # RainsBot
 **RainsBot** est un bot __puissant__, __complet__ et **customisable**. Ses plugins de logs, de protection et de message de bienvenue et d'aurevoir vous assure un contrôle de votre communauté !
