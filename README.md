@@ -1,6 +1,3 @@
-<a href="https://discord.gg/SSWQamBCFE"><img src="https://img.shields.io/discord/787006944974995476" alt="Discord server" /></a>
-<a href="https://github.com/COCO150/RainsBot"><img src="https://img.shields.io/github/stars/COCO150/RainsBot?style=social" alt="Patreon" /></a>
-
 <img src="https://i.imgur.com/ZE3QXBIh.jpg" width="150" alt="RainsBot" />
 
 # RainsBot
