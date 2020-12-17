@@ -1,6 +1,6 @@
 <img align=left src="https://i.imgur.com/ZE3QXBIh.jpg" width="150" alt="RainsBot" />
 
-<a href="https://discord.gg/SSWQamBCFE"><img src="https://img.shields.io/discord/787006944974995476" alt="Serveur support" /></a>
+<a href="https://discord.gg/SSWQamBCFE"><img src="https://img.shields.io/discord/787006944974995476?color=7289da&logo=discord&logoColor=white" alt="Serveur support" /></a>
 <a href="https://github.com/COCO150/RainsBot"><img src="https://img.shields.io/github/stars/COCO150/RainsBot?style=social" alt="GitHub" /></a>
 
 # RainsBot
