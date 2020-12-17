@@ -4,14 +4,14 @@
 </p>
 <br />
 <p>
-  <a href="https://discord.gg/SSWQamBCFE"><img src="https://img.shields.io/discord/787006944974995476?color=7289da&logo=discord&logoColor=white" alt="Discord server" /></a>
+  <a href="https://discord.gg/SSWQamBCFE"><img src="https://img.shields.io/discord/787006944974995476" alt="Discord server" /></a>
   <a href="https://github.com/COCO150/RainsBot"><img src="https://img.shields.io/github/stars/COCO150/RainsBot?style=social" alt="Patreon" /></a>
 </p>
 
 # RainsBot
 **RainsBot** est un bot __puissant__, __complet__ et **customisable**. Ses plugins de logs, de protection et de message de bienvenue et d'aurevoir vous assure un contrôle de votre communauté !
 Découvrez aussi son module de Giveaways, et toutes les commandes utiles à la modération.
-RaisBot est aussi un bot qui évolue souvent ! Découvrez toutes les nouveautés sur notre support.
+RainsBot est aussi un bot qui évolue souvent ! Découvrez toutes les nouveautés sur notre support.
 
 ## Sommaire
 - [RainsBot](#rainsbot)
