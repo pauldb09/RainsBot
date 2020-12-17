@@ -7,7 +7,7 @@
 **RainsBot** est un bot __puissant__, __complet__ et **customisable**. Ses plugins de logs, de protection et de message de bienvenue et d'aurevoir vous assure un contrôle de votre communauté !  
 Découvrez aussi son module de Giveaways, et toutes les commandes utiles à la modération.
 RainsBot est aussi un bot qui évolue souvent !  
-Vous pouvez retrouver toutes les nouveautés sur notre support.
+Vous pouvez retrouver toutes les nouveautés sur [notre support](https://discord.gg/SSWQamBCFE).
 
 ## Sommaire
   - [Fonctionnalités](#fonctionnalités)
