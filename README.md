@@ -9,8 +9,9 @@ Découvrez aussi son module de Giveaways, et toutes les commandes utiles à la m
 RainsBot est aussi un bot qui évolue souvent ! Découvrez toutes les nouveautés sur notre support.
 
 ## Sommaire
-  - [Sommaire](#sommaire)
   - [Fonctionnalités](#fonctionnalités)
+  - [Setup](#setup)
+    - [Configuration](#configuration)
   - [Commandes](#commandes)
   - [Liens](#liens)
 
@@ -19,6 +20,12 @@ RainsBot est aussi un bot qui évolue souvent ! Découvrez toutes les nouveauté
 * 👋 `Bienvenue et Aurevoir`: Message et salon configurable
 * ⚒️ `Logs`: Salon modifiable
 * 🎉 `Giveaways`: Start, End, Reroll
+
+## Setup
+### Configuration
+Le plus important lorsque vous rajoutez le bot sur votre serveur, c'est de le configurer pour choisir quels plugins vous souhaitez installer pour qu'il s'adapte au mieux à votre serveur !  
+coucou
+
 
 ## Commandes
 ```js
