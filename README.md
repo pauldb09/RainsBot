@@ -14,6 +14,8 @@ Vous pouvez retrouver toutes les nouveautés sur notre support.
   - [Setup](#setup)
     - [Configuration](#configuration-de-base)
     - [Modifications](#modifications-de-vos-préférences)
+    - [Protection](#protection)
+    - [Autres](#autres)
   - [Commandes](#commandes)
   - [Liens](#liens)
 
@@ -28,7 +30,6 @@ Vous pouvez retrouver toutes les nouveautés sur notre support.
 Le plus important lorsque vous rajoutez le bot sur votre serveur, c'est de le configurer pour choisir quels plugins vous souhaitez installer pour qu'il s'adapte au mieux à votre serveur !  
 La première chose que vous pouvez faire est d'avoir un vue d'ensemble des plugins disponibles en faisant la commande `?config`. À partir de là, vous pouvez déjà vous dire quels fonctionnalité vous souhaiteriez avoir sur votre serveur.  
 Ensuite, pour activer un plugin, faites `?enable <plugin>` (par exemple, si vous souhaitez activer les message de bienvenue, faites `?enable welcome`).
-P.S.: Modifiez le préfixe avec la commande `?setprefix <nouveau préfixe>` ;)
 
 ### Modifications de vos préférences
 Pour affiner la configuration du bot sur votre serveur, plusieurs commandes sont à votre disposition ; il existe une commande pour modifier chaque plugin.  
@@ -37,8 +38,15 @@ Petite nuance au niveau de plugins de bienvenue et d'aurevoir : `?welcome <chann
 
 ### Protection
 Pour finir, les commandes de protection du serveur sont différentes, mais plus simples !  
-Faites la commande associée au nom du système de protection pour l'activer !
+Faites la commande associée au nom du système de protection pour l'activer !  
 **Exemple**: `?antilink` pour activer l'anti lien !
+
+### Autres
+Derniers détails pour que cotre config soit parfaite :  
+`?variables` pour voir les variables disponibles pour le message de bienvenue et d'aurevoir  
+`?setprefix` pour modifier le préfixe du bot !  
+Revérifiez toute la configuration du serveur avec la commande `?config` !
+Si vous souhaitez tout réinitialiser la config, faites `?reset-config` :(
 
 ## Commandes
 ```js
