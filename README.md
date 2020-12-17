@@ -45,7 +45,7 @@ Faites la commande associée au nom du système de protection pour l'activer !
 Derniers détails pour que cotre config soit parfaite :  
 `?variables` pour voir les variables disponibles pour le message de bienvenue et d'aurevoir  
 `?setprefix` pour modifier le préfixe du bot !  
-Revérifiez toute la configuration du serveur avec la commande `?config` !
+Revérifiez toute la configuration du serveur avec la commande `?config` !  
 Si vous souhaitez tout réinitialiser la config, faites `?reset-config` :(
 
 ## Commandes
