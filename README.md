@@ -1,4 +1,4 @@
-<img src="https://i.imgur.com/ZE3QXBIh.jpg" width="150" alt="RainsBot" />
+<img align=left src="https://i.imgur.com/ZE3QXBIh.jpg" width="150" alt="RainsBot" />
 
 # RainsBot
 **RainsBot** est un bot __puissant__, __complet__ et **customisable**. Ses plugins de logs, de protection et de message de bienvenue et d'aurevoir vous assure un contrôle de votre communauté !
