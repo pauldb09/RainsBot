@@ -4,9 +4,10 @@
 <a href="https://github.com/COCO150/RainsBot"><img src="https://img.shields.io/github/stars/COCO150/RainsBot?style=social" alt="GitHub" /></a>
 
 # RainsBot
-**RainsBot** est un bot __puissant__, __complet__ et **customisable**. Ses plugins de logs, de protection et de message de bienvenue et d'aurevoir vous assure un contrôle de votre communauté !
+**RainsBot** est un bot __puissant__, __complet__ et **customisable**. Ses plugins de logs, de protection et de message de bienvenue et d'aurevoir vous assure un contrôle de votre communauté !  
 Découvrez aussi son module de Giveaways, et toutes les commandes utiles à la modération.
-RainsBot est aussi un bot qui évolue souvent ! Découvrez toutes les nouveautés sur notre support.
+RainsBot est aussi un bot qui évolue souvent !  
+Vous pouvez retrouver toutes les nouveautés sur notre support.
 
 ## Sommaire
   - [Fonctionnalités](#fonctionnalités)
