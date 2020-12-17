@@ -5,6 +5,11 @@
 Découvrez aussi son module de Giveaways, et toutes les commandes utiles à la modération.
 RaisBot est aussi un bot qui évolue souvent ! Découvrez toutes les nouveautés sur notre support.
 
+## Sommaire
+- [Fonctionnalités](#fonctionnalités)
+- [Commandes](#commandes)
+- [Liens](#liens)
+
 ## Fonctionnalités
 * 🛡️ `Protection`: Raidmode, Antiban, Anti-lien, Anti-give-role
 * 👋 `Bienvenue et Aurevoir`: Message et salon configurable
