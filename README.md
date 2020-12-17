@@ -9,7 +9,7 @@ Découvrez aussi son module de Giveaways, et toutes les commandes utiles à la m
 RainsBot est aussi un bot qui évolue souvent ! Découvrez toutes les nouveautés sur notre support.
 
 ## Sommaire
-- [RainsBot](#rainsbot)
+[RainsBot](#rainsbot)
   - [Sommaire](#sommaire)
   - [Fonctionnalités](#fonctionnalités)
   - [Commandes](#commandes)
