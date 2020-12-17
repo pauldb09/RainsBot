@@ -12,7 +12,8 @@ Vous pouvez retrouver toutes les nouveautés sur notre support.
 ## Sommaire
   - [Fonctionnalités](#fonctionnalités)
   - [Setup](#setup)
-    - [Configuration](#configuration)
+    - [Configuration](#configuration-de-base)
+    - [Modifications](#modifications-de-vos-préférences)
   - [Commandes](#commandes)
   - [Liens](#liens)
 
@@ -23,10 +24,21 @@ Vous pouvez retrouver toutes les nouveautés sur notre support.
 * 🎉 `Giveaways`: Start, End, Reroll
 
 ## Setup
-### Configuration
+### Configuration de base
 Le plus important lorsque vous rajoutez le bot sur votre serveur, c'est de le configurer pour choisir quels plugins vous souhaitez installer pour qu'il s'adapte au mieux à votre serveur !  
-coucou
+La première chose que vous pouvez faire est d'avoir un vue d'ensemble des plugins disponibles en faisant la commande `?config`. À partir de là, vous pouvez déjà vous dire quels fonctionnalité vous souhaiteriez avoir sur votre serveur.  
+Ensuite, pour activer un plugin, faites `?enable <plugin>` (par exemple, si vous souhaitez activer les message de bienvenue, faites `?enable welcome`).
+P.S.: Modifiez le préfixe avec la commande `?setprefix <nouveau préfixe>` ;)
 
+### Modifications de vos préférences
+Pour affiner la configuration du bot sur votre serveur, plusieurs commandes sont à votre disposition ; il existe une commande pour modifier chaque plugin.  
+Si vous souhaitez modifier le salon de logs, faites `?logschannel <channel>`  
+Petite nuance au niveau de plugins de bienvenue et d'aurevoir : `?welcome <channel | message> <nouveau paramètre>`
+
+### Protection
+Pour finir, les commandes de protection du serveur sont différentes, mais plus simples !  
+Faites la commande associée au nom du système de protection pour l'activer !
+**Exemple**: `?antilink` pour activer l'anti lien !
 
 ## Commandes
 ```js
