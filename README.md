@@ -64,3 +64,6 @@ Si vous souhaitez tout réinitialiser la config, faites `?reset-config` :(
 [Inviter le bot](https://discord.com/oauth2/authorize?client_id=781911855299035217&scope=bot&permissions=2147483647)
  • [Serveur support](https://discord.gg/SSWQamBCFE)
  • [Crédits](https://github.com/Androz2091/)
+ 
+## Licence
+Le bot est sous licence, si vous utilisez le code pour votre propre projet, merci d'indiquer des crédits quelque part.
