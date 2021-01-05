@@ -1,6 +1,11 @@
 const { MessageEmbed } = require("discord.js");
 
 module.exports = async (client, oldMember, newMember) => {
+    
+    /* 
+     * Système d'antigiverole
+     */
+
     const data = await client.getGuild(newMember.guild);
 
     if(data.plugins.protection.antigiverole === true) {    
