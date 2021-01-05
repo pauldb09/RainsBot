@@ -1,7 +1,7 @@
 module.exports = {
     support: {
-        id: "787006944974995476",
-        logs: "787070110832918608"
+        id: "",
+        logs: ""
     },
     prefix: "?",
     defaultsSettings: {
