@@ -22,14 +22,4 @@ module.exports = async client => {
         }
         return data_.updateOne(data);
     }
-
-    // client.findOrCreateUser = async user => {
-    //     const data = await User.findOne({ id: user.id });
-    //     if(data) return data;
-    //     else {
-    //         const merged = Object.assign({ _id: mongoose.Types.ObjectId() }, user);
-    //         const createUser = await new User(merged);
-    //         createUser.save();
-    //     }
-    // }
 }
