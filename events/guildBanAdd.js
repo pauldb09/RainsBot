@@ -11,24 +11,6 @@ module.exports = async (client, guild, user) => {
 
     const { executor } = fetchGuildAuditLogs.entries.first();
 
-    // if(data.plugins.protection.antiban === true) {
-    //     if(data.lastBanExecutor === null) {
-    //         await client.updateGuild(guild, { lastBanExecutor: executor.id })
-    //     }
-    //     if(data.lastBanTimesstamp === null) {
-    //         await client.updateGuild(guild, { lastBanTimesstamp: Date.now() });
-    //     }
-    //     if(executor.id === data.lastBanExecutor) {
-    //         if((Date.now() - data.lastBanTimesstamp) < 10000) {
-    //             await guild.member(executor).ban({ reason: "A banni 2 personnes en moins de 10s" });
-    //         } else {
-    //             await client.updateGuild(guild, { lastBanTimesstamp: Date.now() });
-    //         }
-    //     } else {
-    //         await client.updateGuild(guild, { lastBanExecutor: executor.id });
-    //     }
-    // }
-
     if(data.plugins.logs.enabled) {
         if(data.plugins.logs.channel) {
             let description = `L'utilisateur **${user.username}** s'est fait bannir par ${executor}`;
