@@ -3,7 +3,6 @@ const Guild = require('../models/Guild');
 
 module.exports = async (client, message) => {
     if(message.channel.type === "dm" || message.author.bot) return;
-    if(message.guild.id === "781912828063907900" || message.channel.id === "787070110832918608") {
 
     if(!message.guild.me.permissionsIn(message.channel).has("SEND_MESSAGES") || !message.guild.me.permissionsIn(message.channel).has("READ_MESSAGE_HISTORY")) return message.author.send(`⚠️ ${message.author}, je n'ai pas les permissions de parler ou de voir l'historique de message dans ce salon !`).catch(() => {});
 
@@ -150,5 +149,4 @@ module.exports = async (client, message) => {
         message.channel.send(`Une erreur est survenue lors de l\'exécution de la commande. \n\`\`\`js\n${error.message}\n\`\`\``);
         client.channels.cache.get(client.config.support.logs).send(`Une erreur est survenue lors de la commande ${commandName}: \n\`\`\`js\n${error.message}\n\`\`\``);
     }
-    } else return message.channel.send('ℹ️ **Le bot n\'est pas encore disponible publiquement, allez sur notre support pour en savoir d\'avantage.** \nhttps://discord.com/invite/SSWQamBCFE');
 }
