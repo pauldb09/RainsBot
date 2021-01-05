@@ -31,8 +31,8 @@ module.exports.run = async (client, message, args) => {
                         msg1.delete().catch(() => {});
                         message.author.send(`❌ Une erreur est survenue. Erreur: \n\`\`\`js\n${err}\n\`\`\``).catch(() => {})
                     });
-                    client.users.cache.get(message.guild.ownerID).send('✅ Tous les salons on été supprimés par **' + message.author.tag + '**!').catch(() => {});
                 })
+                client.users.cache.get(message.guild.ownerID).send('✅ Tous les salons on été supprimés par **' + message.author.tag + '**!').catch(() => {});
             } else {
                 c.stop(true);
                 return message.channel.send('Commande annulée');
