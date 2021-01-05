@@ -1,0 +1,29 @@
+{
+  "name": "rainsbot",
+  "version": "0.0.1",
+  "description": "**RainsBot** est un bot __puissant__, __complet__ et **customisable**. Ses plugins de logs, de protection et de message de bienvenue et d'aurevoir vous assure un contrôle de votre communauté ! \\nDécouvrez aussi son module de Giveaways, et toutes les commandes utiles à la modération.",
+  "main": "index.js",
+  "dependencies": {
+    "beautify": "0.0.8",
+    "discord-giveaways": "^4.2.1",
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
+    "moment": "^2.29.1",
+    "mongoose": "^5.11.8",
+    "ms": "^2.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/COCO150/RainsBot.git"
+  },
+  "author": "COCO150#0001",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/COCO150/RainsBot/issues"
+  },
+  "homepage": "https://github.com/COCO150/RainsBot#readme"
+}
