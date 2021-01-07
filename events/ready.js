@@ -2,7 +2,7 @@ module.exports = client => {
     function randomStatus() {
         const status = client.config.status
         const rstatus = Math.floor(Math.random() * status.length);
-        const toDisplay = status[rstatus].name.replace("{serversCount}", client.guilds.cache.size).replace("{usersCount}", client.users.cache.size);
+        const toDisplay = status[rstatus].name.replace("{serversCount}", client.guilds.cache.size).replace("{usersCount}", client.getAllUsers());
 
         client.user.setActivity(toDisplay, { type: status[rstatus].type });
     }
