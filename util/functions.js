@@ -22,4 +22,12 @@ module.exports = async client => {
         }
         return data_.updateOne(data);
     }
+    
+    client.getAllUsers = () => {
+        let size = 0;
+        client.guilds.cache.forEach(g => {
+            size = size + g.memberCount;
+        })
+        return String(size).replace(/(.)(?=(\d{3})+$)/g, '$1 ');
+    }
 }
