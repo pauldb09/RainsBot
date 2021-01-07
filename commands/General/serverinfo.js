@@ -9,7 +9,7 @@ module.exports.run = (client, message) => {
 
     let guildNotifications = guild.defaultMessageNotifications;
 
-    if(guildNotifications == "ALL") guildNotifications = 'Toutes les messages';
+    if(guildNotifications == "ALL") guildNotifications = 'Tous les messages';
     if(guildNotifications == "MENTIONS") guildNotifications = 'Mentions uniquement';
 
     let guildVerificationLevel = guild.verificationLevel;
