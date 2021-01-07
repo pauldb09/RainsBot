@@ -7,6 +7,7 @@ module.exports = async (client, oldMember, newMember) => {
      */
 
     const data = await client.getGuild(newMember.guild);
+    if(!data) return;
 
     if(data.plugins.protection.antigiverole === true) {    
         if(oldMember.roles.cache.size < newMember.roles.cache.size) {
