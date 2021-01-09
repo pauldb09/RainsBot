@@ -19,9 +19,9 @@ module.exports.run = async (client, message, args, data) => {
         if(moderatorPosition <= memberPosition) return message.channel.send(`⚠️ Vous ne pouvez pas mute une personne plus haute que vous.`);
     }
 
-    let muteRole = message.guild.roles.cache.find(r => r.name.toLowerCase() == "muted" || r.name.toLowerCase() == "muet") || data.muterole;
-    if(!muteRole) {
-            await message.guild.roles.create({
+    let muteRole = data.muterole;
+    if(!message.guild.roles.cache.get(muteRole)) {
+        await message.guild.roles.create({
             data: {
                 name: "Muted",
                 color: "#000000",
@@ -29,27 +29,43 @@ module.exports.run = async (client, message, args, data) => {
                 position: message.member.roles.highest.position - 1,
                 mentionnable: false
             }
+        }).then(async role => {
+            await client.updateGuild(message.guild, { muterole: role.id });
+
+            message.guild.channels.cache.forEach(channel => {
+                if(!message.guild.me.permissionsIn(channel).has("MANAGE_CHANNELS")) return;
+                channel.updateOverwrite(role, {
+                    SEND_MESSAGES: false,
+                    ADD_REACTIONS: false,
+                    CONNECT: false,
+                })
+            })
+
+            await member.roles.add(role).then(() => {
+                message.channel.send(`✅ ${user} s'est fait mute par ${message.author} pour la raison suivante: **${reason}**`);
+            }).catch(err => {
+                console.log(err);
+                message.channel.send(`Une erreur est survenue, veuillez réessayer. \n\`\`\`js\n${err}\n\`\`\``);
+            })
         })
-        await client.updateGuild(message.guild, { muterole: message.guild.roles.cache.find(r => r.name === "Muted").id });
-    } else if(!data.muterole) {
-        await client.updateGuild(message.guild, { muterole: message.guild.roles.cache.find(r => r.name === "Muted").id });
+    } else {
+        message.guild.channels.cache.forEach(channel => {
+            if(!message.guild.me.permissionsIn(channel).has("MANAGE_CHANNELS")) return;
+            if(!channel.permissionsFor(muteRole).has('SEND_MESSAGES')) return;
+            channel.updateOverwrite(message.guild.roles.cache.get(muteRole), {
+                SEND_MESSAGES: false,
+                ADD_REACTIONS: false,
+                CONNECT: false,
+            })
+        })
+
+        await member.roles.add(muteRole).then(() => {
+            message.channel.send(`✅ ${user} s'est fait mute par ${message.author} pour la raison suivante: **${reason}**`);
+        }).catch(err => {
+            console.log(err);
+            message.channel.send(`Une erreur est survenue, veuillez réessayer. \n\`\`\`js\n${err}\n\`\`\``);
+        })
     }
-
-    message.guild.channels.cache.forEach(async channel => {
-        if(!message.guild.me.permissionsIn(channel).has("MANAGE_CHANNELS")) return;
-        await channel.updateOverwrite(muteRole || message.guild.roles.cache.find(r => r.name === "Muted"), {
-          SEND_MESSAGES: false,
-          ADD_REACTIONS: false,
-          CONNECT: false,
-        });
-    });
-
-    await member.roles.add((muteRole || message.guild.roles.cache.find(r => r.name === "Muted")).id).catch(err => {
-        console.log(err);
-        message.channel.send(`Une erreur est survenue, veuillez réessayer. \n\`\`\`js\n${err}\n\`\`\``);
-    });
-
-    message.channel.send(`✅ ${user} s'est fait mute par ${message.author} pour la raison suivante: **${reason}**`);
 
     if(data.plugins.logs.enabled) {
         if(data.plugins.logs.channel) {
