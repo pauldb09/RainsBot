@@ -1,6 +1,6 @@
 {
   "name": "rainsbot",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "**RainsBot** est un bot __puissant__, __complet__ et **customisable**. Ses plugins de logs, de protection et de message de bienvenue et d'aurevoir vous assure un contrôle de votre communauté ! \\nDécouvrez aussi son module de Giveaways, et toutes les commandes utiles à la modération.",
   "main": "index.js",
   "dependencies": {
