@@ -1,7 +1,7 @@
 const beautify = require("beautify");
 const { MessageEmbed } = require("discord.js");
 
-module.exports.run = async (client, message, args) => {
+module.exports.run = async (client, message, args, data, userData) => {
     if (
         message.author.id !== client.config.owner.id
     ) return client.emit('ownerOnly', message);
