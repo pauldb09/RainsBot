@@ -1,8 +1,8 @@
 const { MessageEmbed } = require('discord.js');
 
 module.exports.run = async (client, message, args, data) => {
-    let toDelete = parseInt(args[0]);
-    if(!toDelete || isNaN(toDelete) || toDelete < 1 || toDelete > 100) return message.channel.send(`⚠️ Veuillez indiquer un nombre entre 1 et 100.`);
+    let toDelete = args[0];
+    if(!toDelete || isNaN(toDelete) || parseInt(toDelete) < 1 || parseInt(toDelete) > 100) return message.channel.send(`⚠️ Veuillez indiquer un nombre entre 1 et 100.`);
 
     await message.delete();
 
@@ -25,7 +25,7 @@ module.exports.run = async (client, message, args, data) => {
         message.channel.send(`✅ ${toDelete} message supprimés.`);
 
         if(data.plugins.logs.enabled) {
-            if(data.plugins.logs.channel) {
+            if(message.guild.channels.cache.get(data.plugins.logs.channel)) {
                 const embed = new MessageEmbed()
                     .setColor(client.config.embed.color)
                     .setDescription(`${message.author} a supprimé ${toDelete} messages dans ${message.channel}`)
