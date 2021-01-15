@@ -5,8 +5,8 @@ module.exports.run = async (client, message, args, data) => {
 
     if(!user) return message.channel.send("⚠️ Veuillez mentionner un utilisateur à qui supprimer des messages.");
 
-    let toDelete = parseInt(args[1]);
-    if(!toDelete || isNaN(toDelete) || toDelete < 1 || toDelete > 100) return message.channel.send(`⚠️ Veuillez indiquer un nombre entre 1 et 100.`);
+    let toDelete = args[1];
+    if(!toDelete || isNaN(toDelete) || parseInt(toDelete) < 1 || parseInt(toDelete) > 100) return message.channel.send(`⚠️ Veuillez indiquer un nombre entre 1 et 100.`);
 
     let messages = (await message.channel.messages.fetch({
         limit: 100,
@@ -23,7 +23,7 @@ module.exports.run = async (client, message, args, data) => {
         await messages[0].delete().catch(() => {});
 
         if(data.plugins.logs.enabled) {
-            if(data.plugins.logs.channel) {
+            if(message.guild.channels.cache.get(data.plugins.logs.channel)) {
                 const embed = new MessageEmbed()
                     .setColor(client.config.embed.color)
                     .setDescription(`${message.author} a supprimé 1 message de l'utilisateur **${user.username}**.`)
@@ -45,7 +45,7 @@ module.exports.run = async (client, message, args, data) => {
         message.channel.send(`✅ ${messages.length} messages supprimés de ${user}.`);
 
         if(data.plugins.logs.enabled) {
-            if(data.plugins.logs.channel) {
+            if(message.guild.channels.cache.get(data.plugins.logs.channel)) {
                 const embed = new MessageEmbed()
                     .setColor(client.config.embed.color)
                     .setDescription(`${message.author} a supprimé ${messages.length} messages de l'utilisateur **${user.username}**.`)
