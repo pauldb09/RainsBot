@@ -2,14 +2,14 @@ const { MessageCollector, MessageEmbed } = require("discord.js");
 
 module.exports.run = (client, message, args, data) => {
     if(!data.plugins.suggestion.enabled) {
-        desc = "⚠️ Les suggestions ne sont pas activées sur le serveur!";
-        if(message.member.hasPermission("MANAGE_GUILD")) desc = desc += "\nActivez les grâce à la commande `" + data.prefix + "enable suggestion`.";
+        let desc = "⚠️ Les suggestions ne sont pas activées sur le serveur!";
+        if(message.member.hasPermission("MANAGE_GUILD")) desc += "\nActivez les grâce à la commande `" + data.prefix + "enable suggestion`.";
         return message.channel.send(desc);
     }
 
-    if(!data.plugins.suggestion.channel) {
-        desc = "⚠️ Le salon de suggestion n'est pas défini";
-        if(message.member.hasPermission("MANAGE_GUILD")) desc = desc += "\nConfigurez le avec la commande `" + data.prefix + "suggestion-channel`.";
+    if(!message.guild.channels.cache.get(data.plugins.suggestion.channel)) {
+        let desc = "⚠️ Le salon de suggestion n'est pas défini";
+        if(message.member.hasPermission("MANAGE_GUILD")) desc += "\nConfigurez le avec la commande `" + data.prefix + "suggestion-channel`.";
         return message.channel.send(desc);
     }
 
