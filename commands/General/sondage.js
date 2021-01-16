@@ -7,7 +7,7 @@ module.exports.run = (client, message, args) => {
     .setFooter(client.config.embed.footer, client.user.displayAvatarURL());
 
     if(args.length) {
-        let survey = args.slice(1).join(" ");
+        let survey = args.join(" ");
 
         if(survey.length < 5 || survey.length > 500) return message.channel.send('⚠️ Votre sondage doit faire entre 5 et 500 caractères !');
 
